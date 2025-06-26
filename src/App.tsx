@@ -1,20 +1,20 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from "react";
+import Sidebar from "./components/Sidebar";
+import ChatArea from "./components/ChatArea";
+import Directory from "./components/Directory";
+import Navbar from "./components/NavBar";
+import MessageList from "./components/MessageList";
 
-function App() {
-  const [count, setCount] = useState(0)
-
+const App: React.FC = () => {
   return (
- <>
- <div className="app">
- <h1 className="text-3xl font-bold underline">
-    Hello world!
-  </h1>
- </div>
- </>
-  )
-}
+    <div className="flex h-screen bg-gray-100 text-gray-800">
+      <Navbar/>
+      <MessageList/>
+      {/* <Sidebar /> */}
+      <ChatArea />
+      <Directory />
+    </div>
+  );
+};
 
-export default App
+export default App;
