@@ -17,7 +17,7 @@ const Navbar: React.FC = () => {
       <div className="space-y-6">
         {/* Logo */}
         <div className="w-10 h-10 rounded-full bg-indigo-600 text-white flex items-center justify-center text-lg font-bold shadow">
-          M
+          Saro
         </div>
 
         {/* Navigation */}
