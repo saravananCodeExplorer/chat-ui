@@ -1,5 +1,5 @@
 import React from "react";
-import { FileText, User } from "lucide-react";
+import { FileText } from "lucide-react";
 
 const Directory: React.FC = () => {
   const files = [
